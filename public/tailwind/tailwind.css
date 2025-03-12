@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: IranYekan;
+  src: url("../font/IRANYekanWeb.woff");
+}
+
+@font-face {
+  font-family: IranYekanBold;
+  src: url("../font/iranyekanwebbold.woff2");
+}
+
+@layer base {
+  * {
+    @apply font-[IranYekan];
+  }
+  swiper-container {
+    @apply desktop:w-full desktop:h-full;
+  }
+  swiper-slide {
+    @apply desktop:text-center desktop:text-[18px] desktop:bg-white desktop:flex desktop:items-center desktop:justify-center;
+  }
+  swiper-slide img {
+    @apply desktop:block desktop:w-full desktop:h-full desktop:object-cover;
+  }
+
+}
+
+@layer components{
+  .time{
+    @apply mobile:w-[26px] mobile:h-[26px] mobile:bg-white mobile:rounded-[4px] mobile:flex mobile:items-center mobile:justify-center;
+  }
+  .colon{
+    @apply mobile:text-[15px] mobile:text-white mobile:font-bold mobile:leading-[2.15] mobile:w-[4px];
+  }
+  .percent{
+    @apply mobile:w-[34px] mobile:h-[20px] mobile:bg-[#d32f2f] mobile:px-[4px] mobile:text-white mobile:text-[12px] mobile:leading-[2.17] mobile:font-bold mobile:rounded-[16px] mobile:flex mobile:justify-center mobile:items-center
+  }
+  .border{
+    @apply mobile:border-solid mobile:border-[1px] mobile:border-[#e0e0e2] mobile:rounded-[16px];
+  }
+
+}
+
+@layer utilities {
+  .ltr {
+    direction: ltr;
+  }
+  .rtl{
+    direction: rtl;
+  }
+  @media (max-width: 1024px) {
+    .market > :nth-child(n+4){
+     @apply hidden;
+    }
+    
+  }
+}

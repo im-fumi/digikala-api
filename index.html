@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه اینترنتی دیجی کالا</title>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/setting.css" />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="mobile:pb-[55px] desktop:pb-0" id="top">
+      <img
+        class="mobile:w-full mobile:h-[35px] mobile:object-cover desktop:hidden"
+        src="./public/images/header/head.gif"
+        alt=""
+      />
+      <!-- header mobile -->
+      <header
+        class="mobile:py-[12px] mobile:px-[16px] desktop:hidden mobile:bg-white mobile:-shadow--tw-shadow mobile:shadow-gray-100 mobile:sticky mobile:top-0 mobile:z-[2]"
+      >
+        <div class="mobile:grow">
+          <div
+            class="mobile:max-w-[970px] mobile:h-[40px] mobile:rounded-full mobile:bg-[#f0f0f1] mobile:px-[12px] mobile:flex mobile:items-center"
+          >
+            <div class="mobile:h-[36px] mobile:flex mobile:items-center">
+              <img
+                class="mobile:w-[24px] desktop:h-[24px]"
+                src="./public/svg/header/search.svg"
+                alt=""
+              />
+              <div
+                class="mobile:px-[8px] mobile:flex mobile:items-center mobile:gap-x-[4px]"
+              >
+                <span
+                  class="mobile:text-[14px] mobile:font-bold mobile:leading-[2.15] mobile:text-[#81858b]/70"
+                  >جستجو در</span
+                >
+                <img
+                  class="mobile:w-[61px] mobile:h-[16px] mobile:object-contain"
+                  src="./public/svg/header/digi.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id = "search"
+            class="mobile:mt-[14px] mobile:mb-[4px] mobile:flex mobile:justify-between mobile:items-center desktop:transition-all desktop:duration-100 desktop:translate-y-0"
+          >
+            <div class="mobile:flex mobile:gap-x-[8px]">
+              <img
+                class="mobile:w-[20px] mobile:h-[20px]"
+                src="./public/images/header/gps.png"
+                alt=""
+              />
+              <p class="mobile:text-[12px] mobile:">انتخاب استان و شهر</p>
+            </div>
+            <img
+              class="mobile:w-[24px] mobile:h-[24px]"
+              src="./public/svg/left.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </header>
+      <!-- header mobile -->
+
+
+      <!-- header desktop -->
+      <header
+        id="header"
+        class="mobile:hidden desktop:transition-all desktop:duration-200 desktop:block desktop:w-full desktop:bg-white desktop:pb-[2px] desktop:sticky desktop:top-0 desktop:z-[20] desktop:-shadow--tw-shadow"
+      >
+        <div>
+          <!-- header top -->
+          <div class="desktop:w-full desktop:h-[60px]">
+            <img
+              class="desktop:w-full desktop:h-[60px] desktop:object-cover desktop:cursor-pointer"
+              src="./public/images/header/header.gif"
+              alt=""
+            />
+          </div>
+          <!-- header top -->
+
+          <!-- header center -->
+          <div
+            class="desktop:max-w-[1676px] desktop:h-[68px] desktop:flex desktop:flex-row desktop:px-[16px] desktop:mx-auto desktop:py-[12px]"
+          >
+            <!-- logo -->
+            <div class="desktop:w-[85%] desktop:flex desktop:items-center">
+              <img
+                class="desktop:w-[195px] desktop:h-[30px] desktop:ml-[20px]"
+                src="./public/svg/header/logo.svg"
+                alt=""
+              />
+              <!-- search -->
+              <div
+                class="desktop:w-[600px] desktop:h-[44px] desktop:bg-[#f0f0f1] desktop:rounded-[10px] desktop:flex desktop:items-center desktop:px-[16px]"
+              >
+                <div
+                  class="desktop:w-[568px] desktop:h-[36px] desktop:flex desktop:items-center"
+                >
+                  <img
+                    class="desktop:w-[24px] desktop:h-[24px] desktop:cursor-pointer"
+                    src="./public/svg/header/search.svg"
+                    alt=""
+                  />
+                  <input
+                    name="search"
+                    class="desktop:w-[544px] desktop:h-[26px] desktop:outline-none desktop:bg-[#f0f0f1] desktop:text-[#767a81] desktop:text-[12px] desktop:px-[16px]"
+                    type="text"
+                    placeholder="جستجو"
+                  />
+                </div>
+              </div>
+              <!-- search -->
+            </div>
+            <!-- logo -->
+
+            <!-- login -->
+            <div
+              class="desktop:w-[15%] desktop:flex desktop:items-center desktop:justify-end"
+            >
+              <a
+                href="#"
+                class="desktop:w-[134px] desktop:h-[40px] desktop:border-[1px] desktop:border-solid desktop:border-[#e0e0e2] desktop:rounded-[8px] desktop:py-[8px] desktop:px-[16px]"
+              >
+                <div
+                  class="desktop:w-[100px] desktop:h-[26px] desktop:flex desktop:flex-nowrap desktop:justify-center desktop:items-center desktop:font-[IranYekanBold] desktop:text-[11.7px]"
+                >
+                  <img
+                    class="desktop:w-[24px] desktop:h-[24px] desktop:ml-[8px]"
+                    src="./public/svg/header/login.svg"
+                    alt=""
+                  />
+                  ورود
+                  <span
+                    class="desktop:inline-block desktop:h-[12px] desktop:w-[2px] desktop:bg-[#2b2b2b] desktop:mx-[4px]"
+                  ></span>
+                  ثبت‌نام
+                </div>
+              </a>
+              <span
+                class="desktop:block desktop:w-[1px] desktop:h-[24px] desktop:bg-[#e0e0e2] desktop:mx-[12px]"
+              ></span>
+              <a class="desktop:p-[8px]" href="#"
+                ><img
+                  class="desktop:h-[24px] desktop:w-[24px]"
+                  src="./public/svg/header/cart.svg"
+                  alt=""
+              /></a>
+            </div>
+            <!-- login -->
+          </div>
+          <!-- header center -->
+
+          <!-- header bottom -->
+          <div
+            id="bottom-menu"
+            class="desktop:max-w-[1676px] desktop:mx-auto desktop:h-[40px] desktop:px-[16px] desktop:flex desktop:transition-all desktop:duration-100 desktop:translate-y-0 desktop:z-[10]"
+          >
+            <!-- menu -->
+            <div class="desktop:w-[85%] desktop:h-[inherit] menu">
+              <nav
+                class="desktop:w-[inherit] desktop:h-[inherit] desktop:flex desktop:items-center"
+              ></nav>
+            </div>
+            <!-- menu -->
+
+            <!-- city -->
+            <div
+              class="desktop:w-[15%] desktop:h-[inherit] desktop:pb-[4px] desktop:flex desktop:justify-end"
+            >
+              <div
+                class="desktop:w-[173px] desktop:h-[34px] desktop:px-[12px] desktop:py-[4px] desktop:bg-[#f57f17]/[.07] desktop:rounded-full desktop:flex desktop:gap-x-[8px] desktop:items-center desktop:cursor-pointer"
+              >
+                <img
+                  class="desktop:w-[20px] desktop:h-[20px]"
+                  src="./public/images/header/location.png"
+                  alt=""
+                />
+                <p
+                  class="desktop:text-[12px] desktop:text-[#f57f17] desktop:font-semibold"
+                >
+                  شهر خود را انتخاب کنید
+                </p>
+              </div>
+            </div>
+            <!-- city -->
+          </div>
+          <!-- header bottom -->
+        </div>
+      </header>
+
+      <!-- header -->
+
+      <!-- story -->
+      <div
+        class="mobile:w-full mobile:py-[16px] desktop:h-[170px] desktop:flex desktop:justify-center"
+      >
+        <div class="overflow-x-auto overflow-y-hidden desktop:w-[1336px] desktop:h-[140px]">
+          <div class="swiper myStory">
+            <div class="swiper-wrapper swiper-wrapper-story"></div>
+            <div class="mobile:hidden desktop:block swiper-button-next"></div>
+            <div class="mobile:hidden desktop:block swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- story -->
+
+      <!-- slider -->
+      <div class="mobile:w-full mobile:h-[180px] desktop:max-w-[1920px] desktop:h-[400px] desktop:mx-auto">
+        <div class="swiper mySlider desktop:h-[inherit]">
+          <div class="swiper-wrapper swiper-wrapper-slider"></div>
+
+          <div class="swiper-button-wrapper">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- slider -->
+
+      <!-- supermarket -->
+      <div class="mobile:w-[full] mobile:mx-auto mobile:my-[16px] mobile:px-[8px] desktop:hidden">
+        <div >
+          <img class="mobile:rounded-[16px]" src="./public/images/supermarket.jpg" alt="">
+        </div>
+      </div>
+      <!-- supermarket -->
+
+      <!-- features -->
+      <div
+        class="mobile:h-[119px] mobile:mb-[16px] desktop:mb-0 desktop:h-[175px] desktop:w-full desktop:flex desktop:justify-center desktop:items-center"
+      >
+        <div
+          class="features mobile:w-full mobile:h-[inherit] mobile:overflow-x-auto mobile: mobile:flex desktop:w-[1336px] desktop:h-[115px] desktop:justify-around"
+        ></div>
+
+        <div class="mobile:w-5 mobile:h-1 mobile:mx-auto mobile:rounded-3xl mobile:bg-[#f2f2f2] mobile:relative desktop:hidden">
+          <div class="scrollbar-width mobile:w-1/2 mobile:h-full mobile:rounded-3xl mobile:bg-[#3f4064] mobile:absolute mobile:right-0"></div></div>
+      </div>
+      <!-- features -->
+
+      <!-- amazing -->
+      <div
+        class="mobile:w-full mobile:h-[297px] desktop:h-[294px] desktop:flex desktop:justify-center"
+      >
+        <div
+          class="mobile:w-full mobile:h-[inherit] mobile:bg-gradient-to-l from-[#d22c4e] to-[#ef5662] via-[#ee384e] desktop:max-w-[1336px] desktop:h-[inherit] desktop:rounded-2xl desktop:py-[20px]"
+        >
+
+        <div class="mobile:px-[20px] mobile:pt-[20px] mobile:mb-[12px] mobile:flex mobile:justify-between mobile:items-center desktop:hidden">
+          <div class="mobile:flex mobile:gap-x-[8px] mobile:items-center">
+            <img class="mobile:w-[24px] mobile:h-[24px]" src="./public/svg/amazing/discount.svg" alt="">
+            <img class="mobile:w-[108px] mobile:h-[20px]" src="./public/svg/amazing/amaze.svg" alt="">
+            <div
+                  class="mobile:h-[24px] mobile:flex mobile:items-center mobile:gap-x-[2px] desktop:hidden"
+                >
+                  <div class="mobile:time"></div>
+                  <div class="mobile:colon">:</div>
+                  <div class="mobile:time"></div>
+                  <div class="mobile:colon">:</div>
+                  <div class="mobile:time"></div>
+                </div>
+          </div>
+          <div class="mobile:text-[12px] mobile:font-bold mobile:leading-[2.17] mobile:text-white mobile:flex mobile:items-center">مشاهده همه
+            <img class="mobile:w-[18px] mobile:h-[18px]" src="./public/svg/amazing/more.svg" alt="">
+          </div>
+        </div>
+
+          <div class="swiper myAmazing mobile:pr-[20px] mobile:pb-[20px] desktop:w-[inherit] desktop:pb-0 desktop:pr-0 desktop:pl-[20px]">
+            <div class="swiper-wrapper swiper-wrapper-amazing"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- amazing -->
+
+      <!-- card -->
+      <div
+        class="mobile:p-5 mobile:w-full desktop:p-0 desktop:w-full desktop:h-[275px] desktop:flex desktop:justify-center desktop:items-center"
+      >
+        <div
+          class="card mobile:w-full mobile:mx-auto mobile:flex mobile:justify-between mobile:flex-wrap mobile:gap-[10px] desktop:max-w-[1336px] desktop:h-[241px] desktop:flex-nowrap"
+        ></div>
+      </div>
+      <!-- card -->
+
+      <!-- market -->
+      <div
+        class="mobile:w-full mobile:h-[187px] mobile:px-[20px] desktop:px-0 desktop:w-full desktop:h-[110px] desktop:flex desktop:justify-center"
+      >
+        <div
+          class="mobile:bg-[url('../svg/market/pattern.svg')] mobile:bg-left mobile:bg-no-repeat mobile:bg-[#f0f0f1] mobile:px-[20px] mobile:py-[16px] mobile:rounded-[16px] desktop:w-[1336px] desktop:h-[110px] desktop:pt-[16px] desktop:pb-[12px] desktop:px-[40px] desktop:flex desktop:items-center desktop:justify-between desktop:text-[12px] desktop:font-bold desktop:leading-[2.17]"
+        >
+          <div
+            class="mobile:flex mobile:flex-wrap mobile:flex-col mobile:gap-y-[8px] desktop:flex desktop:flex-nowrap desktop:flex-row desktop:items-center desktop:justify-between"
+          >
+          <div class="mobile:flex mobile:items-center mobile:justify-between mobile:w-[246px] desktop:w-[356px]">
+            <img
+            class="mobile:w-[40px] mobile:h-[38px] desktop:w-[66px] desktop:h-[62px]"
+            src="./public/images/market/basket.png"
+            alt=""
+          />
+          <img
+            class="mobile:w-[190px] mobile:h-[20px] mobile:mx-[8px] desktop:w-[250px] desktop:h-[28px] desktop:mx-[20px]"
+            src="./public/svg/market/amazing.svg"
+            alt=""
+          />
+          </div>
+
+            <div
+              class="mobile:px-[12px] mobile:bg-[#029a49] mobile:flex mobile:items-center mobile:justify-center mobile:text-white mobile:text-[12px] mobile:h-[28px] mobile:w-[98px] mobile:rounded-full desktop:text-[13px] desktop:w-[112px]"
+            >
+              تا ۵۵٪ تخفیف
+            </div>
+          </div>
+
+          <div
+            class="mobile:mt-[16px] mobile:flex mobile:items-center mobile:justify-between desktop:mt-0 desktop:w-[639px] desktop:h-[74px] desktop:mr-[16px]"
+          >
+            <div class="market mobile:gap-x-[8px] mobile:flex"></div>
+            <div
+              class="mobile:w-[44px] mobile:h-[44px] mobile:p-[12px] mobile:rounded-full mobile:bg-white desktop:w-[147px] desktop:h-[50px]  desktop:px-[20px] desktop:py-[12px] desktop:text-[#029a49] desktop:flex desktop:justify-center desktop:items-center gap-x-[7px] desktop:mr-[8px]"
+            >
+              <div class="mobile:hidden desktop:block">بیش از ۲۰۰ کالا</div>
+              <img
+                class="mobile:w-[20px] mobile:h-[20px]"
+                src="./public/svg/market/more.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- market -->
+
+      <!-- card 2 -->
+      <div
+        class="mobile:p-5 mobile:w-full desktop:p-0 desktop:w-full desktop:h-[275px] desktop:flex desktop:justify-center desktop:items-center"
+      >
+        <div
+          class="card-two mobile:w-full mobile:mx-auto mobile:flex mobile:justify-between mobile:flex-wrap mobile:gap-[10px] desktop:max-w-[1336px] desktop:h-[241px] desktop:flex desktop:flex-nowrap"
+        ></div>
+      </div>
+      <!-- card 2 -->
+
+      <!-- category -->
+      <div
+        class="desktop:w-full desktop:h-[456px] desktop:flex desktop:justify-center"
+      >
+        <div
+          class="mobile:py-[12px] desktop:w-[1336px] desktop:h-[inherit] desktop:pt-[16px] desktop:pb-[40px] desktop:flex desktop:items-center desktop:gap-y-[36px] desktop:flex-col desktop:flex-wrap"
+        >
+          <div class="mobile:text-center mobile:mb-[24px] desktop:mb-0 desktop:w-[224px] desktop:h-[44px]">
+            <h3 class="mobile:text-[18px] desktop:text-[21px]">خرید بر اساس دسته‌بندی</h3>
+          </div>
+
+          <div class="mobile:hidden desktop:block category desktop:w-[1175px] desktop:h-[320px]">
+
+          </div>
+
+          <div class="mobile:h-[488px] desktop:hidden">
+
+            <div class="swiper myCategory desktop:hidden">
+              <div class="swiper-wrapper swiper-wrapper-cat mobile:gap-x-[4px]">
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <!-- category -->
+
+      <!-- poster 1 -->
+      <div
+        class="mobile:w-full mobile:px-[20px] desktop:px-0 desktop:w-full desktop:h-[264px] desktop:flex desktop:justify-center"
+      >
+        <div
+          class="poster-1 desktop:w-[1336px] desktop:h-[inherit] desktop:flex desktop:justify-between"
+        ></div>
+      </div>
+      <!-- poster 1 -->
+
+      <!-- brand -->
+      <div
+        class="mobile:w-full mobile:h-[176px] mobile:py-[24px] mobile:mb-[12px] desktop:w-full desktop:h-[257px] desktop:flex desktop:justify-center desktop:items-center"
+      >
+        <div
+          class="desktop:w-[1336px] desktop:h-[224px] desktop:rounded-[16px] desktop:border desktop:py-[24px]"
+        >
+          <div
+            class="mobile:flex mobile:items-center mobile:justify-center mobile:gap-x-[8px] desktop:h-[44px]"
+          >
+            <img
+              class="mobile:w-[24px] mobile:h-[24px]"
+              src="./public/svg/brand.svg"
+              alt=""
+            />
+            <p
+              class="mobile:text-[18px] desktop:text-[21px] desktop:text-[#0c0c0c] desktop:leading-[2.1]"
+            >
+              محبوب‌ترین برندها
+            </p>
+          </div>
+
+          <div class="mobile:mt-[12px] desktop:h-[117px]">
+            <div class="swiper myBrand">
+              <div
+                class="swiper-wrapper swiper-wrapper-brand desktop:h-[inherit]"
+              ></div>
+              <div class="mobile:hidden desktop:flex swiper-button-next"></div>
+              <div class="mobile:hidden desktop:flex swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- brand -->
+
+      <!-- poster 2 -->
+      <div
+        class="mobile:w-full mobile:px-[20px] desktop:px-0 desktop:w-full desktop:h-[264px] desktop:flex desktop:justify-center"
+      >
+        <div
+          class="poster-2 desktop:w-[1336px] desktop:h-[inherit] desktop:flex desktop:justify-between"
+        ></div>
+      </div>
+      <!-- poster 2 -->
+
+      <!-- product 1 -->
+      <div
+        class="mobile:w-full desktop:h-[450px] desktop:flex desktop:justify-center desktop:items-center"
+      >
+        <div
+          class="product-1 mobile:bg-[#e0e0e2] desktop:border desktop:flex desktop:gap-[1px] desktop:w-[1336px] desktop:h-[418px]"
+        ></div>
+      </div>
+      <!-- product 1 -->
+
+      <!-- bestseller -->
+      <div
+        class="mobile:w-full mobile:py-[16px] desktop:w-[1336px] desktop:h-[404px] desktop:mx-auto desktop:border"
+      >
+        <div
+          class="mobile:flex mobile:justify-between mobile:items-center mobile:px-[8px] desktop:w-[inherit] desktop:h-[44px] desktop:px-[20px] desktop:justify-center desktop:relative"
+        >
+          <div
+            class="mobile:text-[18px] mobile:font-medium mobile:leading-[2.1] mobile:text-[#0c0c0c] mobile:flex mobile:items-center mobile:justify-center mobile:gap-x-[8px] desktop:text-[21px] "
+          >
+            <img
+              class="mobile:w-[24px] mobile:h-[24px]"
+              src="./public/svg/bestseller.svg"
+              alt=""
+            />
+            پرفروش‌ترین کالاها
+          </div>
+
+          <div
+            class="mobile:text-[#19bfd3] mobile:font-bold mobile:text-[14px] mobile:leading-[2.15] mobile:pl-[16px] desktop:flex desktop:items-center desktop:absolute desktop:left-0"
+          >
+            مشاهده همه
+          </div>
+        </div>
+
+        <div
+          class="mobile:mt-[20px] mobile:px-[8px] desktop:w-[1334px] desktop:h-[298px] desktop:mt-[28px]"
+        >
+          <div class="swiper myBestseller">
+            <div class="swiper-wrapper swiper-wrapper-best mobile:gap-x-[16px] desktop:gap-x-0"></div>
+            <div class="mobile:hidden desktop:flex swiper-button-next"></div>
+            <div class="mobile:hidden desktop:flex swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- bestseller -->
+
+      <!-- product 2 -->
+      <div
+        class="mobile:w-full mobile:mt-[16px] desktop:h-[450px] desktop:flex desktop:justify-center desktop:items-center"
+      >
+        <div
+          class="product-2 mobile:bg-[#e0e0e2] desktop:w-[1336px] desktop:h-[418px] desktop:border desktop:flex desktop:gap-[1px]"
+        ></div>
+      </div>
+      <!-- product 2 -->
+
+      <!-- poster (big)-->
+      <div class="mobile:px-[20px] mobile:my-[16px] desktop:my-0 desktop:px-0 desktop:w-[1336px] desktop:h-[167px] desktop:mx-auto">
+        <img
+          class="desktop:rounded-[16px]"
+          src="./public/images/poster/image.jpg"
+          alt=""
+        />
+      </div>
+      <!-- poster (big)-->
+
+      <!-- sale -->
+      <div
+        class="desktop:w-full desktop:h-[845px] desktop:flex desktop:items-center desktop:justify-center"
+      >
+        <div
+          class="mobile:px-[20px] desktop:max-w-[1336px] desktop:h-[814px] desktop:px-[12px] desktop:border"
+        >
+          <div
+            class="mobile:py-[16px] mobile:mb-[8px] mobile:flex mobile:justify-center mobile:items-center mobile:gap-x-[8px] desktop:h-[76px] "
+          >
+            <img
+              class="mobile:w-[24px] mobile:h-[24px]"
+              src="./public/svg/sale.svg"
+              alt=""
+            />
+            <h3
+              class="mobile:text-[18px] mobile:font-medium mobile:leading-[2.1] desktop:text-[21px]"
+            >
+              منتخب محصولات تخفیف و حراج
+            </h3>
+          </div>
+
+          <div class="sale mobile:grid mobile:grid-cols-2 desktop:grid-cols-6"></div>
+        </div>
+      </div>
+      <!-- sale -->
+
+      <!-- hot -->
+      <div
+        class="mobile:w-full mobile:mt-[16px] mobile:py-[16px] desktop:mt-0 desktop:w-[1336px] desktop:h-[404px] desktop:mx-auto desktop:border"
+      >
+        <div
+          class="mobile:px-[8px] desktop:w-[inherit] desktop:h-[44px] desktop:px-[20px] desktop:flex desktop:justify-center desktop:relative"
+        >
+          <div
+            class="mobile:text-[18px] mobile:font-medium mobile:leading-[2.1] mobile:text-[#0c0c0c] mobile:flex mobile:items-center mobile:gap-x-[8px] desktop:text-[21px] desktop:justify-center "
+          >
+            <img
+              class="mobile:w-[24px] mobile:h-[24px]"
+              src="./public/svg/bestseller.svg"
+              alt=""
+            />
+            داغ ترین چند ساعت گذشته
+          </div>
+        </div>
+
+        <div
+          class="mobile:px-[8px] mobile:mt-[20px] desktop:w-[1334px] desktop:h-[298px] desktop:mt-[28px]"
+        >
+          <div class="swiper myBestseller">
+            <div class="swiper-wrapper swiper-wrapper-hot mobile:gap-x-[16px] desktop:gap-x-0"></div>
+            <div class="mobile:hidden desktop:flex swiper-button-next"></div>
+            <div class="mobile:hidden desktop:flex swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- hot -->
+
+      <!-- read -->
+      <div
+        class="mobile:w-full mobile:mt-[16px] mobile:px-[20px] desktop:px-0 desktop:w-[1336px] desktop:h-[319px] desktop:mx-auto desktop:mt-[20px]"
+      >
+        <div
+          class="mobile:px-[20px] mobile:py-[16px] mobile:flex mobile:justify-between mobile:items-center desktop:h-[66px]"
+        >
+          <div
+            class="mobile:text-[14px] mobile:font-medium mobile:leading-[2.1] mobile:text-[#0c0c0c] desktop:text-[16px] desktop:font-bold"
+          >
+            خواندنی‌ها
+          </div>
+          <div
+            class="mobile:text-[12px] mobile:font-bold mobile:leading-[2.17] mobile:text-[#19bfd3] mobile:flex mobile:justify-center mobile:items-center"
+          >
+            مطالب بیشتر در دیجی‌کالا مگ
+            <img
+              class="mobile:w-[18px] mobile:h-[18px]"
+              src="./public/svg/product/more.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="read mobile:flex mobile:flex-col mobile:gap-y-[12px] desktop:h-[253px] desktop:flex-row desktop:gap-y-0 desktop:justify-between"
+        ></div>
+      </div>
+      <!-- read -->
+
+      <!-- mobile footer -->
+      <footer>
+        <div class="mobile:py-[16px] mobile:px-[20px] desktop:hidden">
+          <a href="#top" class="mobile:h-[36px] mobile:px-[16px] mobile:py-[4px] mobile:text-[12px] mobile:font-bold mobile:leading-[2.17] mobile:text-[#19bfd3] mobile:flex mobile:gap-x-[8px] mobile:justify-center">بازگشت به بالا
+            <img class="mobile:w-[24px] mobile:h-[24px]" src="./public/svg/footer/less.svg" alt="">
+          </a>
+
+          <div class="item"></div>
+
+          <!-- accordion -->
+          <div class="footer_item"></div>
+          <!-- accordion -->
+
+          <!-- last accordion -->
+          <div class="mobile:border-b-[1px] mobile:border-[#e0e0e2] mobile:border-solid">
+            <label for="more__0">
+            <div class="mobile:py-[12px] mobile:text-[13px] mobile:leading-[2.15] mobile:font-bold mobile:flex mobile:justify-between mobile:items-center mobile:cursor-pointer">شرکای تجاری
+            </label>
+            <input class="mobile:appearance-none mobile:cursor-pointer mobile:content-[url('../svg/footer/down.svg')] mobile:block mobile:w-[24px] mobile:h-[24px] mobile:checked:content-[url('../svg/footer/upcheck.svg')]" type="checkbox" name="more__0" id="more__0"></div>
+             <div id="show__0" class="mobile-digi mobile:w-full mobile:hidden mobile:justify-end mobile:items-start mobile:gap-[1px] mobile:flex-wrap mobile:bg-[#f0f0f1]"></div>
+        </div>
+          <!-- last accordion -->
+
+          <!-- text -->
+          <div
+            class="mobile:mt-[12px]">
+            <div>
+              <input class="mobile:hidden" type="radio" id="showMore" name="show">
+              <input class="mobile:hidden" type="radio" id="showLess" name="show">
+
+              <div
+                class="mobile:h-[70px] mobile:text-[11px] mobile:leading-[2.17] mobile:text-[#81858b] mobile:overflow-hidden mobile:relative mobile:before:content-[' '] mobile:before:absolute mobile:before:w-[100%] mobile:before:h-[100%] mobile:before:bg-blur-gradient paragraph"
+              >
+                <h1
+                  class="mobile:text-[12px] mobile:text-[#62666d] mobile:font-bold"
+                >
+                  فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین
+                </h1>
+                <p>
+                  یک<strong> خرید</strong> اینترنتی مطمئن، نیازمند فروشگاهی است
+                  که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت
+                  زمان ی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم
+                  داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست
+                  بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود
+                  را داشته باشد.<br />
+                  یکی از مهم‌ترین دغدغه‌های کاربران دیجی‌کالا یا هر فروشگاه‌
+                  اینترنتی دیگری، این است که کالای خریداری شده چه زمانی به
+                  دستشان می‌رسد. دیجی‌کالا شیوه‌های مختلفی از ارسال را متناسب با
+                  فروشنده کالا،‌ مقصد کالا و همچنین نوع کالا در اختیار کاربران
+                  خود قرار می‌دهد. هر یک&nbsp;از روش های ارسال دیجی کالا شرایط و
+                  ویژگی‌های خاص خود را دارند که ممکن است گاهی برای کاربران جدید،
+                  مبهم و پیچیده به نظر برسند. برای آگاهی بیشتر مشتریان از خدمات
+                  دیجی‌کالا، این فروشگاه اینترنتی در بخشی از وب‌سایت خود راهنمای
+                  کاملی از شیوه‌‌های ارسال را به صورت ساده و به دور از پیچیدگی،
+                  قرار داده است که شامل 8 نوع ارسال کالا به روش‌های زیر است:
+                  ارسال امروز، دریافت حضوری، دریافت از گنجه، ارسال توسط فروشنده،
+                  ارسال عادی، ارسال کالاهای بزرگ، سنگین و فوق سنگین، ارسال سریع
+                  سوپرمارکتی، ارسال با پست
+                </p>
+                <p>کدام محصولات در دیجی‌کالا قابل سفارش هستند؟</p>
+                <p>
+                  تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان
+                  خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی
+                  روزهای هفته و تمامی شبانه روز&nbsp;دیجی‌کالا که محصولات دارای
+                  تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و
+                  محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از
+                  گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل
+                  مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم
+                  که&nbsp;امکان <strong>ارسال امروز</strong> برای آن ها وجود
+                  دارد.&nbsp;
+                </p>
+                <p>
+                  دیجی کالا در جشنواره‌های سالیانه خود به طور معمول روی تمام
+                  دسته بندی‌های کالایی تخفیف‌های عالی قرار‌می‌دهد. به عنوان مثال
+                  در زمان
+                  <a class="mobile:text-[#19bfd3]" href="#">بلک فرایدی</a> یا
+                  حراج جمعه سیاه، در این سال‌ها بیشترین درصد تخفیف در اختیار
+                  مشتریان دیجی‌کالا قرار گرفته‌است و شامل دسته بندی های مختلف از
+                  موبایل و لپ تاپ تا عطر و لباس و حتی غذای حیوانات خانگی
+                  بوده‌است.&nbsp;
+                </p>
+                <p>کالای دیجیتال</p>
+                <p>
+                  انواع گوشی موبایل از برندهای مختلفی مثل آیفون، &nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >گوشی سامسونگ</a
+                  >،&nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >گوشی نوکیا</a
+                  >،&nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >گوشی شیائومی</a
+                  >،&nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >گوشی هواوی</a
+                  >، و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار
+                  مثل&nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >تبلت سامسونگ</a
+                  >&nbsp;نوت 10، انواع هندزفری مثل&nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >هندزفری بی سیم</a
+                  >،&nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >تلوزیون</a
+                  >&nbsp;از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع
+                  مانیتور، کیس، کیبورد، مودم از برندهای مختلف مثل&nbsp;مودم
+                  ایرانسل،&nbsp;آنتن&nbsp;و ... تنها بخشی از محصولاتی هستند که
+                  زیر مجموعه کالای دیجیتال در دیجی‌کالا قرار دارند.
+                </p>
+                <p>خودرو، ابزار و تجهیزات صنعتی</p>
+                <p>
+                  انواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا
+                  و...، موتور سیکلت از برندهایی مثل کویر موتور و...، لوازم جانبی
+                  خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و
+                  صفحه کلاج و... و لوازم مصرفی خودرو مثل&nbsp;کفپوش سانا&nbsp;در
+                  این گروه قرار می‌گیرند.
+                </p>
+                <p>مد و پوشاک</p>
+                <p>
+                  محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس
+                  راحتی، لباس ورزشی، اکسسوری، کیف، کفش، عینک آفتابی، لباس زیر،
+                  شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از
+                  برندهای مطرح ایرانی و خارجی موجود در دیجی کالا مثل آدیداس،
+                  نایکی، دبنهامز، آلدو، درسا و... خریداری کنید.
+                </p>
+                <p>اسباب بازی کودک و نوزاد</p>
+                <p>
+                  در این دسته از کالاهای دیجی‌کالا، انواع لوازم بهداشتی و حمام
+                  کودک و نوزاد، انواع پوشاک و کفش،&nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >تبلت</a
+                  >،&nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >اسباب‌بازی</a
+                  >، لوازم اتاق خواب کودک، لوازم ایمنی، لوازم شخصی و غذا خوری و
+                  ... قرار می‌گیرد تا خرید را برای پدر و مادرها به کاری سریع و
+                  آسان تبدیل کند.
+                </p>
+                <p>کالاهای سوپر مارکتی</p>
+                <p>
+                  هر چیزی از مواد خوراکی که به آن نیاز دارید، در&nbsp;<a
+                    class="mobile:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >سوپرمارکت</a
+                  >&nbsp;دیجی‌کالا پیدا می‌شود، محصولات پرطرفداری مثل&nbsp;کره
+                  بادام‌زمینی،&nbsp;عسل،&nbsp;سس،&nbsp;قهوه،&nbsp;زعفران، شکلات،
+                  انواع نان و ... از برندهای معتبر و معروفی مثل&nbsp;نستله،
+                  نوتلا، استارباکس، مزمز، چی توز و ... همگی در اختیار شما هستند
+                  و تا رسیدن به آشپزخانه شما تنها چند کلیک فاصله دارند.
+                </p>
+                <h2>زیبایی و سلامت</h2>
+                <p>
+                  انواع لوازم آرایش مثل لاک، رنگ مو، لوازم آرایش لب، چشم، صورت
+                  و... همگی در دیجی‌کالا موجود هستند. همچنین محصولات بهداشتی مثل
+                  انواع شامپو،
+                  <a class="mobile:text-[#19bfd3]" href="#">کرم ضد آفتاب</a
+                  >،&nbsp;ماسک صورت، ضد تعریق،&nbsp;ماسک مو&nbsp; و...، انواع
+                  لوازم شخصی برقی، ست هدیه، بهترین انواع عطر و اسپری،
+                  <a class="mobile:text-[#19bfd3]" href="#">کرم پودر</a>، ریمل
+                  و رژلب وانواع زیورآلات طلا و نقره مثل&nbsp;سرویس طلا، سرویس
+                  نقره و... به همراه وسایل مراقبت شخصی طبی در گروه زیبایی و
+                  سلامت دیجی‌کالا قرار می‌گیرد. در این بخش برندهای مطرحی مثل
+                  اسنس، پنبه ریز، سینره و... حضور دارند.همچنین میتوانید انواع
+                  مکمل غذایی و دارویی مثل داروی مناسب
+                  <a class="mobile:text-[#19bfd3]" href="#">سرماخوردگی</a> را
+                  در دیجی کالا تهیه کنید.
+                </p>
+                <p>خانه و آشپزخانه</p>
+                <p>
+                  یکی از متنوع‌ترین بخش‌های دیجی‌کالا، بخش لوازم خانه و آشپزخانه
+                  است که از محصولاتی مثل صندلی گیمینگ در بخش صندلی‌ها گرفته تا
+                  انواع&nbsp;مبل راحتی، انواع آبگرمکن مثل&nbsp;آبگرمکن بوتان،
+                  لباسشویی‌های متنوع مثل انواع&nbsp;لباسشویی اسنوا، شیرآلات
+                  مختلف مثل شیرآلات قهرمان و...، ظروف و همچنین لوازم برقی
+                  آشپزخانه مثل توستر و... را شامل می‌شود و امکان خریدی عالی را
+                  برای مشتریان فراهم کرده است. در بخش لوازم خانگی دیجی‌کالا،
+                  برندهای معتبری مثل تفال، اخوان، فیلیپس، ال جی، اسنوا، جی پلاس
+                  و... حضور دارند.
+                </p>
+                <p>کتاب، لوازم تحریر و هنر</p>
+                <p>
+                  بخش هنر، کتاب، رمان و لوازم تحریر دیجی‌کالا نیز یکی از
+                  متنوع‌ترین بخش‌های این فروشگاه اینترنتی است. انواع کتاب و
+                  مجله، کتاب زبان، بازی، لوازم تحریر با طرح‌های مختلف مانند دختر
+                  کفشدوزکی، سازهایی مثل&nbsp;پیانو،&nbsp;سنتور،&nbsp;هنگ
+                  درام&nbsp; و... با بهترین قیمت‌ها و از بهترین برندها در دسترس
+                  شما قرار دارند.
+                </p>
+                <p>ورزش و سفر</p>
+                <p>
+                  هر نوع وسیله و لباس ورزشی که فکرش را کنید، انواع وسایل کمپینگ
+                  و کوهنوردی، ساک و قمقمه ورزشی و وسایل سفر اربعین و... در این
+                  بخش قرار می‌گیرند. همچنین شما می‌توانید وسایل مد نظر خود را بر
+                  اساس نوع ورزش (آبی، هوازی، بدنسازی و...) در دسته‌بندی‌های
+                  دیجی‌کالا پیدا کنید.
+                </p>
+                <p>محصولات بومی و محلی</p>
+                <p>
+                  و در آخر دیجی‌کالا از طریق به فروش رساندن محصولات بومی و سنتی
+                  متفاوتی مثل انواع خوراکی، گلیم و گبه، ابزار و ... تلاش کرده تا
+                  بین هنر ایرانی و متقاضیان آن کوتاه‌ترین راه را پیدا کند. در
+                  این بخش شما می‌توانید انواع محصولات از جمله ظروف زیبای مخصوص
+                  به&nbsp;سفره هفت‌سین&nbsp; و پذیرایی از مهمانان در
+                  روزهای&nbsp;نوروز، انواع آیینه و شمعدان و هر آن چیزی را که
+                  برای خلق زیبایی در روزهای بهاری به آن نیاز دارید، با قیمت
+                  مناسب و تنوع بسیار بالا انتخاب کنید. همچنین در صفحه
+                  <strong>برچسب ها</strong>، امکان مشاهده و خرید انواع محصولات
+                  با طرح های بومی وجود دارد.&nbsp;&nbsp;دیجی‌کالا همچنین برای
+                  اینکه حال و هوای عید را به اعضای خود هدیه کند،&nbsp;تقویم
+                  ۱۴۰۱، انواع ایده&nbsp;عکس پروفایل عید نوروز،&nbsp;آهنگ‌های عید
+                  نوروز&nbsp;و موزیک‌های شاد بهاری، وسایل مربوط
+                  به&nbsp;خانه‌تکانیی و&nbsp;انواع لباس های عید&nbsp; را برای
+                  شما فراهم کرده است تا بتوانید در کنار خرید خود، از این حال و
+                  هوای تازه نهایت لذت را ببرید.
+                </p>
+                <p>&nbsp;</p>
+
+                <label for="showLess">
+                  <span
+                  class="mobile:text-[#a1a3a8] mobile:flex mobile:items-center mobile:gap-1 mobile:text-[14px] mobile:font-bold mobile:leading-[2.15] mobile:cursor-pointer"
+                  >بستن
+                  <img
+                    class="mobile:w-[18px] mobile:h-[18px]"
+                    src="./public/svg/footer/more-grey.svg"
+                    alt=""
+                  />
+                </span>
+                </label>
+              </div>
+
+              <label for="showMore" class="show-more">             
+                <span
+                class="mobile:text-[#a1a3a8] mobile:flex mobile:items-center mobile:gap-1 mobile:text-[14px] mobile:font-bold mobile:leading-[2.15] mobile:cursor-pointer"
+                >مشاهده بیشتر
+                <img
+                  class="mobile:w-[18px] mobile:h-[18px]"
+                  src="./public/svg/footer/more-grey.svg"
+                  alt=""
+                />
+              </span></label>
+
+            </div>
+
+          </div>
+          <!-- text -->
+
+        </div>
+      </footer>
+      <!-- mobile footer -->
+
+      <!-- desktop footer -->
+      <footer
+        class="mobile:hidden desktop:block desktop:w-full desktop:h-[1158px] desktop:mt-[48px] desktop:pt-[32px] desktop:border-t-[1px] desktop:border-solid desktop:border-[#f0f0f1]"
+      >
+        <div
+          class="desktop:max-w-[1676px] desktop:px-[20px] desktop:mx-auto"
+        >
+          <div
+            class="desktop:h-[40px] desktop:flex desktop:justify-between desktop:items-center"
+          >
+            <img
+              class="desktop:w-[195px] desktop:h-[30px]"
+              src="./public/svg/header/logo.svg"
+              alt=""
+            />
+            <a href="#top"
+              class="desktop:border desktop:rounded-[8px] desktop:w-[138px] desktop:h-[inherit] desktop:px-[16px] desktop:py-[8px] desktop:text-[#a1a3a8] desktop:text-[12px] desktop:flex desktop:items-center desktop:gap-x-[5px]"
+            >
+              بازگشت به بالا
+              <img
+                class="desktop:w-[24px] desktop:h-[24px]"
+                src="./public/svg/footer/up.svg"
+                alt=""
+              />
+    </a>
+          </div>
+
+          <div
+            class="desktop:h-[26px] desktop:mt-[12px] desktop:flex desktop:text-[12px] desktop:leading-[2.17] desktop:text-[#3f4064]"
+          >
+            <p>تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</p>
+            <div class="desktop:text-[#a1a3a8] desktop:px-[20px]">|</div>
+            <p>۰۲۱-۹۱۰۰۰۱۰۰</p>
+            <div class="desktop:text-[#a1a3a8] desktop:px-[20px]">|</div>
+            <p>۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p>
+          </div>
+
+          <div
+            class="option desktop:h-[104px] desktop:my-[32px] desktop:flex desktop:justify-between"
+          ></div>
+
+          <div
+            class="list desktop:h-[270px] desktop:flex desktop:mb-[32px]"
+          ></div>
+
+          <!-- app -->
+          <div
+            class="desktop:max-w-[1636px] desktop:h-[76px] desktop:mx-auto desktop:bg-[#3c4b6d] desktop:rounded-[8px] desktop:px-[20px] desktop:py-[8px] desktop:mb-[32px] desktop:flex desktop:items-center desktop:justify-between"
+          >
+            <div
+              class="desktop:w-[288px] desktop:text-[21px] desktop:leading-[2.1] desktop:font-medium desktop:text-white desktop:flex desktop:gap-x-[16px] desktop:items-center"
+            >
+              <img
+                class="desktop:w-[44px] desktop:h-[44px]"
+                src="./public/images/footer/digikala.png"
+                alt=""
+              />
+              دانلود اپلیکیشن دیجی‌کالا
+            </div>
+
+            <div class="desktop:h-[60px] desktop:flex desktop:items-center">
+              <img
+                class="desktop:w-[142px] desktop:h-[44px] desktop:m-[8px]"
+                src="./public/svg/footer/bazar.svg"
+                alt=""
+              />
+              <img
+                class="desktop:w-[142px] desktop:h-[44px] desktop:m-[8px]"
+                src="./public/svg/footer/myket.svg"
+                alt=""
+              />
+              <img
+                class="desktop:w-[142px] desktop:h-[44px] desktop:m-[8px]"
+                src="./public/svg/footer/appstore.svg"
+                alt=""
+              />
+
+              <div
+                class="desktop:w-[44px] desktop:h-[44px] desktop:mr-[16px] desktop:bg-white desktop:rounded-[4px]"
+              >
+                <img
+                  class="desktop:w-[42px] desktop:h-[44px]"
+                  src="./public/svg/footer/more.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- app -->
+
+          <div
+            class="desktop:max-w-[1636px] desktop:py-[32px] desktop:flex desktop:justify-between"
+          >
+            <div class="desktop:w-[1195px]">
+              <input class="desktop:hidden" type="radio" id="showMore" name="show">
+              <input class="desktop:hidden" type="radio" id="showLess" name="show">
+
+              <div
+                class="desktop:ml-[40px] desktop:h-[125px] desktop:text-[12px] desktop:leading-[2.17] desktop:text-[#81858b] desktop:overflow-hidden desktop:relative desktop:before:content-[' '] desktop:before:absolute desktop:before:w-[100%] desktop:before:h-[100%] desktop:before:bg-blur-gradient paragraph"
+              >
+                <h1
+                  class="desktop:text-[21px] desktop:leading-[2.1] desktop:text-[#62666d] desktop:font-bold"
+                >
+                  فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین
+                </h1>
+                <p>
+                  یک<strong> خرید</strong> اینترنتی مطمئن، نیازمند فروشگاهی است
+                  که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت
+                  زمان ی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم
+                  داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست
+                  بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود
+                  را داشته باشد.<br />
+                  یکی از مهم‌ترین دغدغه‌های کاربران دیجی‌کالا یا هر فروشگاه‌
+                  اینترنتی دیگری، این است که کالای خریداری شده چه زمانی به
+                  دستشان می‌رسد. دیجی‌کالا شیوه‌های مختلفی از ارسال را متناسب با
+                  فروشنده کالا،‌ مقصد کالا و همچنین نوع کالا در اختیار کاربران
+                  خود قرار می‌دهد. هر یک&nbsp;از روش های ارسال دیجی کالا شرایط و
+                  ویژگی‌های خاص خود را دارند که ممکن است گاهی برای کاربران جدید،
+                  مبهم و پیچیده به نظر برسند. برای آگاهی بیشتر مشتریان از خدمات
+                  دیجی‌کالا، این فروشگاه اینترنتی در بخشی از وب‌سایت خود راهنمای
+                  کاملی از شیوه‌‌های ارسال را به صورت ساده و به دور از پیچیدگی،
+                  قرار داده است که شامل 8 نوع ارسال کالا به روش‌های زیر است:
+                  ارسال امروز، دریافت حضوری، دریافت از گنجه، ارسال توسط فروشنده،
+                  ارسال عادی، ارسال کالاهای بزرگ، سنگین و فوق سنگین، ارسال سریع
+                  سوپرمارکتی، ارسال با پست
+                </p>
+                <p>کدام محصولات در دیجی‌کالا قابل سفارش هستند؟</p>
+                <p>
+                  تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان
+                  خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی
+                  روزهای هفته و تمامی شبانه روز&nbsp;دیجی‌کالا که محصولات دارای
+                  تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و
+                  محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از
+                  گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل
+                  مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم
+                  که&nbsp;امکان <strong>ارسال امروز</strong> برای آن ها وجود
+                  دارد.&nbsp;
+                </p>
+                <p>
+                  دیجی کالا در جشنواره‌های سالیانه خود به طور معمول روی تمام
+                  دسته بندی‌های کالایی تخفیف‌های عالی قرار‌می‌دهد. به عنوان مثال
+                  در زمان
+                  <a class="desktop:text-[#19bfd3]" href="#">بلک فرایدی</a> یا
+                  حراج جمعه سیاه، در این سال‌ها بیشترین درصد تخفیف در اختیار
+                  مشتریان دیجی‌کالا قرار گرفته‌است و شامل دسته بندی های مختلف از
+                  موبایل و لپ تاپ تا عطر و لباس و حتی غذای حیوانات خانگی
+                  بوده‌است.&nbsp;
+                </p>
+                <p>کالای دیجیتال</p>
+                <p>
+                  انواع گوشی موبایل از برندهای مختلفی مثل آیفون، &nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >گوشی سامسونگ</a
+                  >،&nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >گوشی نوکیا</a
+                  >،&nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >گوشی شیائومی</a
+                  >،&nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >گوشی هواوی</a
+                  >، و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار
+                  مثل&nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >تبلت سامسونگ</a
+                  >&nbsp;نوت 10، انواع هندزفری مثل&nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >هندزفری بی سیم</a
+                  >،&nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >تلوزیون</a
+                  >&nbsp;از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع
+                  مانیتور، کیس، کیبورد، مودم از برندهای مختلف مثل&nbsp;مودم
+                  ایرانسل،&nbsp;آنتن&nbsp;و ... تنها بخشی از محصولاتی هستند که
+                  زیر مجموعه کالای دیجیتال در دیجی‌کالا قرار دارند.
+                </p>
+                <p>خودرو، ابزار و تجهیزات صنعتی</p>
+                <p>
+                  انواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا
+                  و...، موتور سیکلت از برندهایی مثل کویر موتور و...، لوازم جانبی
+                  خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و
+                  صفحه کلاج و... و لوازم مصرفی خودرو مثل&nbsp;کفپوش سانا&nbsp;در
+                  این گروه قرار می‌گیرند.
+                </p>
+                <p>مد و پوشاک</p>
+                <p>
+                  محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس
+                  راحتی، لباس ورزشی، اکسسوری، کیف، کفش، عینک آفتابی، لباس زیر،
+                  شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از
+                  برندهای مطرح ایرانی و خارجی موجود در دیجی کالا مثل آدیداس،
+                  نایکی، دبنهامز، آلدو، درسا و... خریداری کنید.
+                </p>
+                <p>اسباب بازی کودک و نوزاد</p>
+                <p>
+                  در این دسته از کالاهای دیجی‌کالا، انواع لوازم بهداشتی و حمام
+                  کودک و نوزاد، انواع پوشاک و کفش،&nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >تبلت</a
+                  >،&nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >اسباب‌بازی</a
+                  >، لوازم اتاق خواب کودک، لوازم ایمنی، لوازم شخصی و غذا خوری و
+                  ... قرار می‌گیرد تا خرید را برای پدر و مادرها به کاری سریع و
+                  آسان تبدیل کند.
+                </p>
+                <p>کالاهای سوپر مارکتی</p>
+                <p>
+                  هر چیزی از مواد خوراکی که به آن نیاز دارید، در&nbsp;<a
+                    class="desktop:text-[#19bfd3]"
+                    href="#"
+                    target="_blank"
+                    >سوپرمارکت</a
+                  >&nbsp;دیجی‌کالا پیدا می‌شود، محصولات پرطرفداری مثل&nbsp;کره
+                  بادام‌زمینی،&nbsp;عسل،&nbsp;سس،&nbsp;قهوه،&nbsp;زعفران، شکلات،
+                  انواع نان و ... از برندهای معتبر و معروفی مثل&nbsp;نستله،
+                  نوتلا، استارباکس، مزمز، چی توز و ... همگی در اختیار شما هستند
+                  و تا رسیدن به آشپزخانه شما تنها چند کلیک فاصله دارند.
+                </p>
+                <h2>زیبایی و سلامت</h2>
+                <p>
+                  انواع لوازم آرایش مثل لاک، رنگ مو، لوازم آرایش لب، چشم، صورت
+                  و... همگی در دیجی‌کالا موجود هستند. همچنین محصولات بهداشتی مثل
+                  انواع شامپو،
+                  <a class="desktop:text-[#19bfd3]" href="#">کرم ضد آفتاب</a
+                  >،&nbsp;ماسک صورت، ضد تعریق،&nbsp;ماسک مو&nbsp; و...، انواع
+                  لوازم شخصی برقی، ست هدیه، بهترین انواع عطر و اسپری،
+                  <a class="desktop:text-[#19bfd3]" href="#">کرم پودر</a>، ریمل
+                  و رژلب وانواع زیورآلات طلا و نقره مثل&nbsp;سرویس طلا، سرویس
+                  نقره و... به همراه وسایل مراقبت شخصی طبی در گروه زیبایی و
+                  سلامت دیجی‌کالا قرار می‌گیرد. در این بخش برندهای مطرحی مثل
+                  اسنس، پنبه ریز، سینره و... حضور دارند.همچنین میتوانید انواع
+                  مکمل غذایی و دارویی مثل داروی مناسب
+                  <a class="desktop:text-[#19bfd3]" href="#">سرماخوردگی</a> را
+                  در دیجی کالا تهیه کنید.
+                </p>
+                <p>خانه و آشپزخانه</p>
+                <p>
+                  یکی از متنوع‌ترین بخش‌های دیجی‌کالا، بخش لوازم خانه و آشپزخانه
+                  است که از محصولاتی مثل صندلی گیمینگ در بخش صندلی‌ها گرفته تا
+                  انواع&nbsp;مبل راحتی، انواع آبگرمکن مثل&nbsp;آبگرمکن بوتان،
+                  لباسشویی‌های متنوع مثل انواع&nbsp;لباسشویی اسنوا، شیرآلات
+                  مختلف مثل شیرآلات قهرمان و...، ظروف و همچنین لوازم برقی
+                  آشپزخانه مثل توستر و... را شامل می‌شود و امکان خریدی عالی را
+                  برای مشتریان فراهم کرده است. در بخش لوازم خانگی دیجی‌کالا،
+                  برندهای معتبری مثل تفال، اخوان، فیلیپس، ال جی، اسنوا، جی پلاس
+                  و... حضور دارند.
+                </p>
+                <p>کتاب، لوازم تحریر و هنر</p>
+                <p>
+                  بخش هنر، کتاب، رمان و لوازم تحریر دیجی‌کالا نیز یکی از
+                  متنوع‌ترین بخش‌های این فروشگاه اینترنتی است. انواع کتاب و
+                  مجله، کتاب زبان، بازی، لوازم تحریر با طرح‌های مختلف مانند دختر
+                  کفشدوزکی، سازهایی مثل&nbsp;پیانو،&nbsp;سنتور،&nbsp;هنگ
+                  درام&nbsp; و... با بهترین قیمت‌ها و از بهترین برندها در دسترس
+                  شما قرار دارند.
+                </p>
+                <p>ورزش و سفر</p>
+                <p>
+                  هر نوع وسیله و لباس ورزشی که فکرش را کنید، انواع وسایل کمپینگ
+                  و کوهنوردی، ساک و قمقمه ورزشی و وسایل سفر اربعین و... در این
+                  بخش قرار می‌گیرند. همچنین شما می‌توانید وسایل مد نظر خود را بر
+                  اساس نوع ورزش (آبی، هوازی، بدنسازی و...) در دسته‌بندی‌های
+                  دیجی‌کالا پیدا کنید.
+                </p>
+                <p>محصولات بومی و محلی</p>
+                <p>
+                  و در آخر دیجی‌کالا از طریق به فروش رساندن محصولات بومی و سنتی
+                  متفاوتی مثل انواع خوراکی، گلیم و گبه، ابزار و ... تلاش کرده تا
+                  بین هنر ایرانی و متقاضیان آن کوتاه‌ترین راه را پیدا کند. در
+                  این بخش شما می‌توانید انواع محصولات از جمله ظروف زیبای مخصوص
+                  به&nbsp;سفره هفت‌سین&nbsp; و پذیرایی از مهمانان در
+                  روزهای&nbsp;نوروز، انواع آیینه و شمعدان و هر آن چیزی را که
+                  برای خلق زیبایی در روزهای بهاری به آن نیاز دارید، با قیمت
+                  مناسب و تنوع بسیار بالا انتخاب کنید. همچنین در صفحه
+                  <strong>برچسب ها</strong>، امکان مشاهده و خرید انواع محصولات
+                  با طرح های بومی وجود دارد.&nbsp;&nbsp;دیجی‌کالا همچنین برای
+                  اینکه حال و هوای عید را به اعضای خود هدیه کند،&nbsp;تقویم
+                  ۱۴۰۱، انواع ایده&nbsp;عکس پروفایل عید نوروز،&nbsp;آهنگ‌های عید
+                  نوروز&nbsp;و موزیک‌های شاد بهاری، وسایل مربوط
+                  به&nbsp;خانه‌تکانیی و&nbsp;انواع لباس های عید&nbsp; را برای
+                  شما فراهم کرده است تا بتوانید در کنار خرید خود، از این حال و
+                  هوای تازه نهایت لذت را ببرید.
+                </p>
+                <p>&nbsp;</p>
+
+                <label for="showLess">
+                  <span
+                  class="desktop:text-[#19bfd3] desktop:flex desktop:items-center desktop:text-[12px] desktop:font-bold desktop:leading-[2.17] desktop:mt-[8px] desktop:cursor-pointer"
+                  >بستن
+                  <img
+                    class="desktop:w-[18px] desktop:h-[18px]"
+                    src="./public/svg/product/more.svg"
+                    alt=""
+                  />
+                </span>
+                </label>
+              </div>
+
+              <label for="showMore" class="show-more">             
+                <span
+                class="desktop:text-[#19bfd3] desktop:flex desktop:items-center desktop:text-[12px] desktop:font-bold desktop:leading-[2.17] desktop:mt-[8px] desktop:cursor-pointer"
+                >مشاهده بیشتر
+                <img
+                  class="desktop:w-[18px] desktop:h-[18px]"
+                  src="./public/svg/product/more.svg"
+                  alt=""
+                />
+              </span></label>
+
+            </div>
+
+            <div class="desktop:flex desktop:h-[110px]">
+              <div
+                class="desktop:w-[110px] desktop:h-[110px] desktop:border desktop:rounded-[8px] desktop:mr-[8px] desktop:p-[16px]"
+              >
+                <img
+                  class="desktop:w-[75px] desktop:h-[75px] desktop:object-contain"
+                  src="./public/images/footer/rezi.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="desktop:w-[110px] desktop:h-[110px] desktop:border desktop:rounded-[8px] desktop:mr-[8px] desktop:p-[16px]"
+              >
+                <img
+                  class="desktop:w-[75px] desktop:h-[75px] desktop:object-contain"
+                  src="./public/images/footer/kasbokar.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="desktop:w-[110px] desktop:h-[110px] desktop:border desktop:rounded-[8px] desktop:mr-[8px] desktop:p-[16px]"
+              >
+                <img
+                  class="desktop:w-[75px] desktop:h-[75px] desktop:object-contain"
+                  src="./public/images/footer/enamad.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="desktop:max-w-[1636px] desktop:h-[89px] desktop:mx-auto desktop:py-[32px] desktop:text-[11px] desktop:leading-[2.17] desktop:text-[#81858b] desktop:text-center"
+          >
+            برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع»
+            کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه
+            (فروشگاه آنلاین دیجی‌کالا) است.
+          </div>
+        </div>
+
+        <div
+          class="desktop:w-full desktop:h-[160px] desktop:flex desktop:justify-center desktop:bg-[#f0f0f1]"
+        >
+          <div
+            class="digi desktop:max-w-[1676px] desktop:h-[inherit] desktop:flex desktop:flex-wrap desktop:justify-around"
+          ></div>
+        </div>
+      </footer>
+      <!-- desktop footer -->
+
+      <!-- mobile supermarket -->
+      <div class="mobile:mx-auto mobile:w-[235px] mobile:h-[41px] mobile:text-[14px] mobile:font-bold mobile:px-[8px] mobile:py-[6px] mobile:bg-[#029a49] mobile:text-[white] mobile:leading-[2.1] mobile:rounded-[28px] mobile:flex mobile:items-center mobile:fixed mobile:left-0 mobile:bottom-0 mobile:right-0 mobile:z-10 desktop:hidden mobile:transition-all mobile:duration-500 mobile:translate-y-[-65px]">
+          <img
+          class="mobile:w-[20px] mobile:h-[20px]"
+          src="./public/images/basket.png"
+          alt=""
+        />
+        <div class="mobile:w-[1px] mobile:h-4 mobile:bg-white/20 mobile:mx-[8px]"></div>
+        سوپرمارکت، تنوع بالا، پرتخفیف
+      </div>
+      <!-- mobile supermarket -->
+
+      <!-- desktop supermarket -->
+      <div
+        class="mobile:hidden desktop:py-[10px] desktop:px-[12px] desktop:bg-[#029a49] desktop:text-[white] desktop:text-[15px] desktop:font-bold desktop:leading-[2.15] desktop:fixed desktop:left-4 desktop:bottom-8 desktop:rounded-[28px] desktop:z-[4] desktop:flex desktop:items-center desktop:transition-all desktop:duration-300 desktop:h-[53px]"
+      >
+        سوپرمارکت
+        <div
+          class="desktop:flex desktop:whitespace-nowrap inner-div desktop:items-center desktop:transition-all desktop:duration-300 desktop:w-0 desktop:overflow-hidden"
+        >
+          <div
+            class="desktop:w-[1px] desktop:h-4 desktop:bg-white/20 desktop:mx-[8px]"
+          ></div>
+          تنوع بالا و پرتخفیف
+        </div>
+
+        <img
+          class="desktop:w-[28px] desktop:h-[28px] desktop:mr-[8px]"
+          src="./public/images/basket.png"
+          alt=""
+        />
+      </div>
+      <!-- desktop supermarket -->
+
+      <!-- operator -->
+      <div class="mobile:hidden desktop:block desktop:w-[48px] desktop:h-[48px] desktop:rounded-[50%] desktop:p-[12px] desktop:fixed desktop:right-[50px] desktop:z-[10] desktop:bottom-[32px] desktop:bg-[#ef4056] desktop:font-bold desktop:leading-[2.1]">
+        <input class="peer desktop:appearance-none desktop:cursor-pointer desktop:content-[url('../svg/operator.svg')] desktop:block desktop:w-[24px] desktop:h-[24px] desktop:checked:content-[url('../svg/close.svg')]" type="checkbox" id="show__close">
+
+        <div class="desktop:peer-checked:flex desktop:hidden desktop:rounded-[16px] desktop:bg-white desktop:overflow-hidden desktop:flex-col desktop:flex-grow desktop:w-[360px] desktop:h-[70vh] desktop:border-solid desktop:border-[1px] desktop:border-[#ef4056] desktop:fixed desktop:bottom-[76px] desktop:right-[50px] desktop:z-[1]">
+          <div class="desktop:py-2 desktop:px-5 desktop:w-full desktop:bg-[#ef4056] desktop:flex desktop:items-center desktop:justify-between">
+            <h2 class="desktop:text-[19px] desktop:text-white">پشتیبانی آنلاین</h2>
+            <label for="show__close">
+            <img class="desktop:w-[24px] desktop:h-[24px] desktop:cursor-pointer" src="./public/svg/back.svg" alt="">
+            </label>
+          </div>
+
+          <div class="desktop:px-2 desktop:pb-[20px] desktop:pt-[12px] desktop:overflow-auto">
+            <div class="desktop:text-[19px] desktop:mb-1">سلام👋👋</div>
+            <p class="desktop:text-[14px] desktop:leading-[2.15]">اینجا می‌توانید تعدادی از پرسش های متداول را ببینید یا در صورت تمایل با ما آنلاین گفتگو کنید!</p>
+
+            <ul class="operator desktop:mt-4 desktop:mb-5 desktop:grow"></ul>
+
+            <button class="desktop:px-4 desktop:py-3 desktop:mx-auto desktop:bg-[#ef4056] desktop:text-[white] desktop:text-[14px] desktop:font-bold desktop:leading-[2.15] desktop:rounded-full desktop:flex desktop:justify-between desktop:items-center desktop:gap-x-[8px] desktop:h-[48px]">
+              تماس با ما
+              <img src="./public/svg/leftwhite.svg" alt="">
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <!-- operator -->
+
+      <!-- mobile menu -->
+      <div class="mobile-menu mobile:w-full mobile:h-[55px] mobile:fixed mobile:right-0 mobile:left-0 mobile:bottom-0 mobile:bg-[white] mobile:flex mobile:border-t-[1px] mobile:border-solid mobile:border-[#f0f0f1] mobile:z-10 desktop:hidden">
+      </div>
+      <!-- mobile menu -->
+
+    </div>
+    <!-- wrapper -->
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/main.js" type="module"></script>
+    <script>
+      // const showSubmenu = (id) => {
+      //   const submenuItem = document.querySelector(`#submenu-item-${id}`);
+      //   if (submenuItem) {
+      //     submenuItem.style.display = "block";
+      //   }
+      // };
+
+      // const hideSubmenu = (id) => {
+      //   const submenuItem = document.querySelector(`#submenu-item-${id}`);
+
+      //   if (submenuItem) {
+      //     submenuItem.style.display = "none";
+      //   }
+      // };
+
+      // supermarket extension
+      const innerDiv = document.querySelector(".inner-div");
+      function checkScrollPosition() {
+        const scrollPosition = window.scrollY;
+        const targetPosition = 700;
+        if (scrollPosition >= targetPosition) {
+          innerDiv.style.width = "142px";
+        } else {
+          innerDiv.style.width = "0px";
+        }
+      }
+      window.addEventListener("scroll", checkScrollPosition);
+
+
+      const menu = document.getElementById("bottom-menu");
+      const header = document.getElementById("header");
+
+      let lastScrollTop = 0;
+      let isScrolling = false; // To prevent multiple scroll event triggers
+
+      window.addEventListener("scroll", function () {
+
+        const currentScroll =
+          window.scrollY || document.documentElement.scrollTop;
+
+        // If the user is scrolling down
+        if (currentScroll > lastScrollTop && currentScroll > 0) {
+          menu.style.height = "0px"
+          menu.style.overflow = "hidden"
+        }
+        // If the user is scrolling up
+        else if (currentScroll < lastScrollTop) {
+          menu.style.height = "40px"
+          menu.style.overflow = "visible"
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      });
+
+
+      function setupAccordion() {
+        const checkbox = document.getElementById(`more__0`);
+        const content = document.getElementById(`show__0`);
+        
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            content.style.display = 'flex'; // Show content
+          } else {
+            content.style.display = 'none'; // Hide content
+          }
+        });
+    }
+    setupAccordion();
+
+
+    //features scroll
+    const featuresDiv = document.querySelector('.features');
+    const scrollbar = document.querySelector('.scrollbar-width');
+
+    featuresDiv.addEventListener('scroll', () => {
+    const maxScroll = featuresDiv.scrollWidth - featuresDiv.clientWidth;
+    const scrollPercentage = featuresDiv.scrollLeft / maxScroll;
+    const newRight = -50 * scrollPercentage;
+    scrollbar.style.right = `${newRight}%`;
+});
+
+    </script>
+  </body>
+</html>
