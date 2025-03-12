@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("/db.json") // Fetch the JSON file from the public folder
+  fetch("https://https://im-fumi.github.io/digikala-api/public/db.json") // Fetch the JSON file from the public folder
     .then((response) => response.json()) // Convert response to JSON
     .then((data) => {
       console.log(data); // Check if data loads correctly
