@@ -1,10 +1,11 @@
 const Operator = async() =>{
     let rows =[]
     try {
-        let data = await fetch("http://localhost:3004/operator")
-        let res = await data.json()
+      let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
+      let res = await data.json();
+      let resource = res["operator"]
 
-        rows = res.map((item)=>{
+        rows = resource.map((item)=>{
             return `<li class="desktop:my-2">
             <label for="extend__${item.id}">
             <div class="desktop:border desktop:rounded-[8px] desktop:p-3"><div class="desktop:text-[15px] desktop:flex desktop:justify-between desktop:items-center desktop:pb-3">${item.title}
@@ -20,7 +21,7 @@ const Operator = async() =>{
         document.querySelector(".operator").innerHTML = rows.join("")
 
         function setAccordion() {
-            res.forEach(item => {
+            resource.forEach(item => {
               const checkbox = document.getElementById(`extend__${item.id}`);
               const content = document.getElementById(`sho__${item.id}`);
               

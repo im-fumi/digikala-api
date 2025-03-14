@@ -2,14 +2,15 @@ const Category = async () => {
   let rows = [];
   try {
     // Fetch the data from your API
-    let data = await fetch("http://localhost:3004/category");
+    let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
     let res = await data.json();
+    let resource = res["category"]
 
     const category = document.querySelector(".swiper-wrapper-cat"); // Use your existing container
 
     // Group the items and render them as HTML
-    for (let i = 0; i < res.length; i += 3) {
-      const groupItems = res.slice(i, i + 3);
+    for (let i = 0; i < resource.length; i += 3) {
+      const groupItems = resource.slice(i, i + 3);
 
       // Create a group div with its items
       const groupHTML = `
@@ -33,8 +34,8 @@ const Category = async () => {
     }
 
     // Split the data into two groups
-    const group1 = res.slice(0, 8); // Items 1 to 8
-    const group2 = res.slice(8, 16); // Items 9 to 16
+    const group1 = resource.slice(0, 8); // Items 1 to 8
+    const group2 = resource.slice(8, 16); // Items 9 to 16
 
     // Function to create a div for each group with flex styling
     const createRowHTML = (group) => {

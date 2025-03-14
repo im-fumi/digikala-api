@@ -1,8 +1,9 @@
 const Product = async (address, name) => {
     let products = [];
     try {
-        let data = await fetch(address);
+        let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
         let res = await data.json();
+        let resource = res[address]
 
         const generateImage = (src) => {
             return `<div class="mobile:flex mobile:justify-center mobile:items-center mobile:max-w-[600px] mobile:bg-white mobile:p-[8px] desktop:w-[146px] desktop:h-[146px]">
@@ -10,7 +11,7 @@ const Product = async (address, name) => {
                     </div>`;
         };
 
-        products = res.map((item) => {
+        products = resource.map((item) => {
             return `
                 <div class="mobile:bg-white mobile:py-[8px] mobile:px-[20px] desktop:w-[333px] desktop:h-[416px]">
                     <div class="mobile:text-[14px] mobile:font-bold mobile:leading-[2.1] mobile:text-[#23254e] desktop:text-[16px]">${item.title}</div>

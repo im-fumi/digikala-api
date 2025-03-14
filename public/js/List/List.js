@@ -2,8 +2,9 @@ const List = async () => {
   let items = [];
   let rows = [];
   try {
-    let data = await fetch("http://localhost:3004/list");
+    let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
     let res = await data.json();
+    let resource = res["list"]
 
     const generateItem = (item) => {
       return `<a href="#" class="mobile:text-[12px] mobile:block mobile:text-[#424750] mobile:leading-[2.15] mobile:mb-[12px] desktop:text-[14px] desktop:text-[#81858b] desktop:mb-[8px]">${item}</a>`;
@@ -13,7 +14,7 @@ const List = async () => {
       return `<img src=${item} class="desktop:h-[40px] desktop:w-[40px]" alt="">`;
     };
 
-    items = res.map((item) => {
+    items = resource.map((item) => {
       if (item.id == 4) {
         return `<div class="desktop:w-5/12 desktop:grow">
                 <div><h4 class="desktop:text-[16px] desktop:font-bold desktop:text-[#3f4064] desktop:leading-[2.1] desktop:mb-[12px]">${
@@ -41,7 +42,7 @@ const List = async () => {
             </div>`;
     });
 
-    rows = res.map((item) => {
+    rows = resource.map((item) => {
         if (item.id <= 3){
             return `<div class="mobile:border-b-[1px] mobile:border-[#e0e0e2] mobile:border-solid">
             <label for="more__${item.id}">
@@ -65,7 +66,7 @@ const List = async () => {
     document.querySelector(".footer_item").innerHTML = rows.join("");
 
     function setupAccordion() {
-      res.forEach(item => {
+      resource.forEach(item => {
         const checkbox = document.getElementById(`more__${item.id}`);
         const content = document.getElementById(`show__${item.id}`);
         

@@ -1,10 +1,11 @@
 const SubItem = async () => {
   let posts = [];
   try {
-    let data = await fetch("http://localhost:3004/submenu-item");
+    let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
     let res = await data.json();
+    let resource = res["submenu-item"]
 
-    res.forEach((submenu) => {
+    resource.forEach((submenu) => {
       let submenuHTML = `
             <div class="desktop:rtl desktop:bg-white" id="submenu-item-${submenu.id}">
                 <div class="desktop:flex desktop:items-center desktop:gap-x-[4px] desktop:mb-[20px] desktop:text-[12px] desktop:font-bold desktop:leading-[2.17] desktop:text-[#008eb2]">

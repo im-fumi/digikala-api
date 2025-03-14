@@ -1,10 +1,11 @@
 const Item = async () => {
   let rows = [];
   try {
-    let data = await fetch("http://localhost:3004/item");
+    let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
     let res = await data.json();
+    let resource = res["item"]
 
-    rows = res.map((item) => {
+    rows = resource.map((item) => {
       return `<div class="mobile:py-[8px] mobile:flex mobile:justify-between mobile:items-center mobile:border-b-[1px] mobile:border-[#f0f0f1] mobile:border-solid">
             <div class="mobile:flex mobile:gap-2">
             <div class="mobile:w-[36px] mobile:h-[36px] mobile:flex mobile:items-center mobile:justify-center mobile:rounded-full ${

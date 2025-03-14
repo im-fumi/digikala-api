@@ -1,10 +1,11 @@
 const Amazing = async () => {
   let slides = [];
   try {
-    let data = await fetch("http://localhost:3004/amazing");
+    let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
     let res = await data.json();
+    let resource = res["amazing"]
 
-    slides = res.map((item) => {
+    slides = resource.map((item) => {
       if (item.id == 0) {
         return `<div class="mobile:hidden desktop:flex desktop:swiper-slide">
             <div

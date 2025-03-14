@@ -1,10 +1,11 @@
 const Story = async () => {
   let slides = [];
   try {
-    let data = await fetch("http://localhost:3004/story");
+    let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
     let res = await data.json();
+    let resource = res["story"]
 
-    slides = res.map((item) => {
+    slides = resource.map((item) => {
       return `<div class="swiper-slide mobile:ml-[12px] mobile:pt-[5px] desktop:ml-0 desktop:w-[84px] desktop:h-[inherit] ${item.id == 1? "mobile:mr-[8px] desktop:mr-[0]": ""}">
         <div class="mobile:w-[84px] desktop:h-full">
         <div class="mobile:cursor-pointer mobile:relative mobile:w-[84px] mobile:h-[84px] mobile:mx-auto">

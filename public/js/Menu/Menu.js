@@ -1,7 +1,8 @@
 const Menu = async () => {
   try {
-    let data = await fetch("http://localhost:3004/menu");
+    let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
     let res = await data.json();
+    let resource = res["menu"]
 
     const generateMenuItem = (item) => {
       const separator =
@@ -28,9 +29,9 @@ const Menu = async () => {
                 : ""
             }${item.title}</a>
             ${item.id == 1? `<div class="desktop:w-auto desktop:h-[517px] desktop:absolute desktop:top-[40px] desktop:right-0 desktop:rounded-bl-[8px] desktop:hidden group-hover/menu:flex">
-            <div class="desktop:bg-[#f5f5f5] desktop:flex desktop:flex-col desktop:w-[200px] desktop:overflow-y-auto desktop:overflow-x-hidden desktop:ltr submenu-cat"></div>
+            <!-- <div class="desktop:bg-[#f5f5f5] desktop:flex desktop:flex-col desktop:w-[200px] desktop:overflow-y-auto desktop:overflow-x-hidden desktop:ltr submenu-cat"></div>
 
-            <div class="desktop:px-[20px] desktop:pt-[20px] desktop:pb-[16px] desktop:ltr desktop:bg-[blue] desktop:overflow-auto submenu_item"></div>
+            <div class="desktop:px-[20px] desktop:pt-[20px] desktop:pb-[16px] desktop:ltr desktop:bg-[blue] desktop:overflow-auto submenu_item"></div> -->
             </div>`: ""}
             </div>
         ${separator}
@@ -38,7 +39,7 @@ const Menu = async () => {
       `;
     };
 
-    const menu = res.map(generateMenuItem).join("");
+    const menu = resource.map(generateMenuItem).join("");
 
     document.querySelector(".menu nav").innerHTML = menu;
   } catch (error) {

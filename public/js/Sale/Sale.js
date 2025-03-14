@@ -1,10 +1,11 @@
 const Sale = async() =>{
     let posts = []
     try {
-        let data = await fetch("http://localhost:3004/sale")
-        let res = await data.json()
+        let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
+        let res = await data.json();
+        let resource = res["sale"]
 
-        posts = res.map((item)=>{
+        posts = resource.map((item)=>{
             return `<div class="mobile:py-[12px] mobile:px-[16px] mobile:border-solid mobile:border-[#f0f0f1] mobile:border-b-[1px] desktop:w-[218px] desktop:h-[242px] desktop:px-[8px]  ${item.id == 6 || item.id == 12 || item.id == 18? "" : "desktop:border-l-[1px]"}">
             <div class="mobile:w-[130px] mobile:h-[130px] mobile:mb-[4px] mobile:mx-auto desktop:w-[150px] desktop:h-[150px]"><img class="mobile:w-[inherit] mobile:h-[inherit] mobile:object-contain" src=${item.image} alt=""></div>
 

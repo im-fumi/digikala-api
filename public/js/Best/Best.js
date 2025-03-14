@@ -1,8 +1,9 @@
 const Bestseller = async (address, name) => {
   let slides = [];
   try {
-    let data = await fetch(address);
+    let data = await fetch("https://im-fumi.github.io/digikala-api/public/db.json");
     let res = await data.json();
+    let resource = res[address]
 
     const generateRow = (image, num, title) => {
       return `<div class="mobile:flex mobile:gap-x-[12px] mobile:h-[86px] mobile:bg-white mobile:items-center desktop:w-[inherit]">
@@ -15,7 +16,7 @@ const Bestseller = async (address, name) => {
                     </div>`;
     };
 
-    slides = res.map((item) => {
+    slides = resource.map((item) => {
       return `<div class="swiper-slide">
             <div class="mobile:flex mobile:flex-col mobile:flex-wrap mobile:gap-y-[20px] desktop:w-[314px] desktop:h-[298px] ">
             ${generateRow(item.image1, item.num1, item.title1)}
